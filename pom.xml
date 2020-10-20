@@ -27,7 +27,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>1.7</java.version>
+    <java.version>11</java.version>
     <kotlin.version>1.2.60</kotlin.version>
     <spotless.version>1.14.0</spotless.version>
     <retrofit.version>2.9.0</retrofit.version>
@@ -172,8 +172,7 @@
           <version>3.8.1</version>
           <configuration>
             <forceJavacCompilerUse>true</forceJavacCompilerUse>
-            <source>${java.version}</source>
-            <target>${java.version}</target>
+            <release>${java.version}</release>
             <showWarnings>true</showWarnings>
           </configuration>
         </plugin>
